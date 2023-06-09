@@ -1,0 +1,47 @@
+#█▀▀▀ █▀▀█ █▀▀█ █▀▄▀█ █▀▀▄ █▀▀█ ▀▀█▀▀ █░░░ █▀▀█ █▀▀▀
+#█▀▀▀ █░░░ █░░█ █░▀░█ █▀▀▄ █▄▄█ ░░█░░ █░░░ █░░█ █░▀█
+#█░░░ █▄▄█ ▀▀▀▀ ▀░░░▀ ▀▀▀░ ▀░░▀ ░░▀░░ █▄▄█ ▀▀▀▀ ▀▀▀▀
+#Plugin de CombatLog Simples e funcional.
+#Feito por DevFlugelo
+
+Config:
+  #Poder criar um "corpo" onde o jogador morreu:
+  armorStand: true
+  #Tempo para armorStand sumir e dropar os itens (em segundos)
+  TimerStand: 60
+  #Tempo que o jogador fica em batalha (em segundos)
+  TimePvp: 10
+
+  mensagens:
+    JoinPvp: "&cFCombatLog: &6Você entrou em pvp com o jogador &e(target)"
+    ExitPvp: "&cFCombatLog: &aVocê saiu de combate"
+    Timer: "&cFCombatLog: &eTempo para sair do combate: &6(timer)"
+    ExitServer: "&cFCombatLog: &eJogador (player) saiu do servidor em combate."
+    NotCommandExecuter: "&cFCombatLog: &4Você não pode executar esse comando em combate."
+
+  #Configuração para executar caso o player faça algo de errado.
+  pena:
+
+    #comando personalizado que você pode setar:
+    command: true
+    comando: ""
+
+    #Dropar o item se o player deslogar em combate:
+    drop: true
+
+    #mandar mensagem para todos os player que o player saiu do servidor estando em combate:
+    mensage: true
+
+  #Comandos que sera bloqueado digitar quando o jogador estiver em Combate
+  blockCommand:
+    - "tpa"
+    - "tpaccept"
+    - "tpahere"
+    - "tell"
+    - "home"
+    - "back"
+    - "tp"
+
+
+
+

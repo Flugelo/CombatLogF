@@ -1,0 +1,7 @@
+main: me.flugel.fcombatelog.CombatLog
+name: FCombatLog
+author: DevFlugelo
+version: 1.0
+commands:
+  fcombat:
+    aliases: [fc]
